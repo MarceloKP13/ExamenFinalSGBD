@@ -43,14 +43,14 @@ body {
 
 /* Estilo para el enlace de Cerrar Sesión */
 .nav-links .logout{
-    color: #e66666; /* Rojo brillante para llamar la atención */
-    font-weight: bold; /* Para hacerlo más notorio */
+    color: #e66666; 
+    font-weight: bold; 
 }
 
 .nav-links .logout:hover {
-    color: #ff0000; /* Rojo más intenso al pasar el ratón */
-    text-decoration: underline; /* Subrayado al hacer hover */
-    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+    color: #ff0000; 
+    text-decoration: underline; 
+    cursor: pointer; 
 }
 
 /* Contenedor principal */
@@ -87,7 +87,7 @@ body {
 
 h2 {
     text-align: center;
-    color: #000000;
+    color: #000;
 }
 
 /* Párrafos */
@@ -121,7 +121,7 @@ h2 {
     display: flex;
     width: 100%;
     height: auto;
-    max-width: 600px;
+    max-width: 200px;
     border-radius: 10px;
 }
 
@@ -130,56 +130,4 @@ h2 {
     margin-top: 10px;
     font-size: 14px;
     color: #555;
-}
-
-/* Footer */
-.footer {
-    background-color: #4c3d86;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: auto;
-}
-
-.footer-content p {
-    margin: 5px 0;
-}
-
-.footer img {
-    width: 30px;
-    margin: 0 10px;
-    border-radius: 50%;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #4c3d86;
-    }
-    .nav-links.active {
-        display: flex;
-    }
-    .nav-links li {
-        text-align: center;
-        padding: 10px;
-    }
-
-    .video-container iframe {
-        height: 300px;
-    }
 }
