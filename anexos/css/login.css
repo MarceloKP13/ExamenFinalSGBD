@@ -1,0 +1,64 @@
+/*Estilo para el contenedor del login*/
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/*Estilo contendedor login*/
+.login-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/*Estilo contendedor registro*/
+.registro-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/*Estilo para los input o campos de entrada*/
+.input-group{
+    margin-right: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.input-group label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.input-group input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/*Estilo Botón*/
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00360c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #283f2d;
+}
