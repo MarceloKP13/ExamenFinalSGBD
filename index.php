@@ -8,9 +8,10 @@ session_start();
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="anexos/imagenes/iconophp.png">
     <title>PHP - Examen Final</title>
-    
     <link rel="stylesheet" href="anexos/css/estilosindex.css">
+    <link rel="stylesheet" href="anexos/css/header_footer.css">
 </head>
 <body>
     <header class="header">
@@ -27,7 +28,8 @@ session_start();
                 <li><a href="php/contacto.php">Contacto</a></li>
                 <li>
                     <?php if (isset($_SESSION['usuario'])):?>
-                        <a href=""><?php echo $_SESSION['usuario'];?> | </a>
+                        <a href=""><?php echo $_SESSION['usuario'];?></a>
+                        <a href="">|</a>
                         <a href="php/auth/salir.php" class = "logout">Cerrar Sesión</a>
                         <?php else:?>
                             <a href="php/iniciarsesion.php">Iniciar Sesión</a>
@@ -53,9 +55,9 @@ session_start();
 
             <div class="card">
                 <img src="anexos/imagenes/historia.png" alt="Historia">
-                <h3>Inicio</h3>
+                <h3>Historia</h3>
                 <p>Introducción general a PHP y su importancia.</p>
-                <a href="historia.php" class="btn">Ver Más</a>
+                <a href="php/historia.php" class="btn">Ver Más</a>
             </div>
             <div class="card">
                 <img src="anexos/imagenes/conceptos.png" alt="Conceptos">
