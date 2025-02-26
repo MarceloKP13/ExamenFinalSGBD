@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inciar Sesión</title>
+    <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="../anexos/css/login.css">
 </head>
 <body>
