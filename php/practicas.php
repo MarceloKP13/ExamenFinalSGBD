@@ -8,7 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../anexos/imagenes/practicas.png">
-    <title>Conceptos de PHP</title>
+    <title>Prácticas de PHP</title>
     <link rel="stylesheet" href="../anexos/css/conceptos.css">
     <link rel="stylesheet" href="../anexos/css/header_footer.css">
 </head>

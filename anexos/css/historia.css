@@ -6,53 +6,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #4c3d86;
-    padding: 2px;
-    color: white;
-}
-
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.menu-toggle:hover{
-    transform: scale(2.5);
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-/* Estilo para el enlace de Cerrar Sesión */
-.nav-links .logout{
-    color: #e66666; 
-    font-weight: bold; 
-}
-
-.nav-links .logout:hover {
-    color: #ff0000; 
-    text-decoration: underline; 
-    cursor: pointer; 
-}
-
 /* Contenedor principal */
 .container {
     max-width: 900px;

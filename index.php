@@ -49,8 +49,8 @@ session_start();
             <div class="card">
                 <img src="anexos/imagenes/inicio.png" alt="Inicio">
                 <h3>Inicio</h3>
-                <p>Introducción general a PHP y su importancia.</p>
-                <a href="index.php" class="btn">Ver Más</a>
+                <p>Introducción general a PHP y contenido disponible.</p>
+                <a href="index.php" class="btn">Actualizar</a>
             </div>
 
             <div class="card">
@@ -93,7 +93,13 @@ session_start();
                 <img src="anexos/imagenes/iniciarsesion.png" alt="Iniciar Sesión">
                 <h3>Iniciar Sesión</h3>
                 <p>Accede a tu cuenta para más funciones.</p>
-                <a href="php/iniciarsesion.php" class="btn">Ver más</a>
+                <a href="php/iniciarsesion.php" class="btn">Iniciar Sesión</a>
+            </div>
+            <div class="card">
+                <img src="anexos/imagenes/registro.png" alt="Regístrarse">
+                <h3>Iniciar Sesión</h3>
+                <p>Accede a tu cuenta para más funciones.</p>
+                <a href="php/auth/registro.php" class="btn">Regístrarse</a>
             </div>
         </section>
     </main>

@@ -71,6 +71,11 @@ body {
     margin-top: auto;
 }
 
+.footer p{
+    text-align: center;
+    color: white;
+}
+
 .footer-content p {
     margin: 5px 0;
 }
