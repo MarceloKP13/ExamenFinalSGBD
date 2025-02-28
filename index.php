@@ -24,7 +24,6 @@ session_start();
                 <li><a href="php/conceptos.php">Conceptos</a></li>
                 <li><a href="php/practicas.php">Prácticas</a></li>
                 <li><a href="php/basededatos.php">Base de Datos</a></li>
-                <li><a href="php/recursos.php">Recursos</a></li>
                 <li><a href="php/contacto.php">Contacto</a></li>
                 <li>
                     <?php if (isset($_SESSION['usuario'])):?>

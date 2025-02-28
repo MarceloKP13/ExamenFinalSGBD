@@ -1,6 +1,5 @@
 /* SECCIÓN CONTACTOS */
 .contactos-container {
-    max-width: 1100px;
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -24,6 +23,11 @@
     align-items: center;
     flex-wrap: wrap;
     max-width: 700px;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover{
+    transform: scale(1.05);
 }
 
 .tarjeta .imagen {
@@ -220,9 +224,9 @@ button[type="submit"] {
     color: #FFF4E6;
     padding: 12px 16px;
     border: none;
-    border-radius: 50px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Arial', sans-serif;
     transition: background-color 0.3s ease;
 }
@@ -267,23 +271,8 @@ button[type="submit"]:disabled {
 
 /* Estilo para el botón "Enviar comentario" */
 button[type="submit"] {
-    background-color: #055007;
-    color: white;
     font-size: 18px;
     padding: 12px 30px;
     border-radius: 5px;
     margin-top: 20px;
-}
-
-button[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-button[type="submit"]:active {
-    background-color: #388e3c;
-}
-
-button[type="submit"]:disabled {
-    background-color: #bdbdbd;
-    cursor: not-allowed;
 }
