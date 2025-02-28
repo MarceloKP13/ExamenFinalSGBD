@@ -74,20 +74,42 @@ if (!$result) {
         <button class="comentarios-btn" onclick="toggleComentariosForm()">Deja tu comentario</button>
 
         <div id="comentarios-form" style="display:none;">
-            <h3>Deja tu comentario</h3>
-            <form action="auth_com/save_com.php" method="POST">
-                <textarea name="comentario" rows="4" placeholder="Escribe tu comentario aquí..." required></textarea><br>
-                <label>
-                    <input type="checkbox" name="usuario_registrado" <?php if (isset($_SESSION['usuario'])) echo "checked"; ?>>
-                    Usar mis datos registrados
-                </label><br>
-                <div id="usuario-datos" style="display: none;">
-                    <input type="hidden" name="nombre" value="<?php echo isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Anónimo'; ?>">
-                    <p><strong>Nombre:</strong> <?php echo isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Anónimo'; ?></p>
-                </div>
-                <button type="submit">Enviar comentario</button>
-            </form>
+    <h3>Deja tu comentario</h3>
+    <form action="auth_com/save_com.php" method="POST">
+        <textarea name="comentario" rows="4" placeholder="Escribe tu comentario aquí..." required></textarea><br>
+        
+        <label>
+            <input type="checkbox" name="usuario_registrado" id="usuario_registrado" <?php if (isset($_SESSION['usuario'])) echo "checked"; ?>>
+            Usar mis datos registrados
+        </label><br>
+        
+        <div id="usuario-datos" style="display: none;">
+            <input type="hidden" name="nombre" value="<?php echo isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Anónimo'; ?>">
+            <p><strong>Nombre:</strong> <?php echo isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Anónimo'; ?></p>
         </div>
+
+        <button type="submit">Enviar comentario</button>
+    </form>
+</div>
+
+<script>
+    // Mostrar/ocultar datos del usuario según el checkbox
+    document.getElementById("usuario_registrado").addEventListener('change', function() {
+        var usuarioDatos = document.getElementById("usuario-datos");
+        if (this.checked) {
+            usuarioDatos.style.display = "block";
+            document.querySelector('input[name="nombre"]').value = "<?php echo isset($_SESSION['usuario']) ? $_SESSION['usuario'] : ''; ?>";
+        } else {
+            usuarioDatos.style.display = "none";
+            document.querySelector('input[name="nombre"]').value = "Anónimo";
+        }
+    });
+
+    // Inicializar el estado según si el usuario está registrado
+    if (document.getElementById("usuario_registrado").checked) {
+        document.getElementById("usuario-datos").style.display = "block";
+    }
+</script>
 
         <div id="comentarios">
             <?php
