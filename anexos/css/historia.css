@@ -64,10 +64,19 @@ h2 {
 
 /* Video */
 .video {
-    justify-content: center;
+    display: flex;
+    flex-direction: column; /* Apila el video y el texto */
     align-items: center;
     text-align: center;
     margin: 20px 0;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 560px; /* Tamaño máximo para pantallas grandes */
+    height: auto;
+    aspect-ratio: 16 / 9; /* Mantiene la relación de aspecto */
+    border-radius: 10px;
 }
 
 .video video {
@@ -78,9 +87,34 @@ h2 {
     border-radius: 10px;
 }
 
-.video p{
-    text-align: center;
+.video p {
     margin-top: 10px;
     font-size: 14px;
     color: #555;
+    width: 100%;
+}
+/* Contenedor del video */
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video video {
+    width: 100%;
+    max-width: 600px; 
+    height: auto;
+    aspect-ratio: 16/9; 
+    border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+    .video video {
+        max-width: 90%; 
+    }
+    .video iframe {
+        max-width: 90%;
+    }
 }
